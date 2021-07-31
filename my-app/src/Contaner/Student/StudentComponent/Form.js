@@ -24,7 +24,6 @@ const Form = (props) => {
     }
     const OnSubmit = async (event) => {
         event.preventDefault();
-        console.log(form)
         const submitForm = {}
         Object.keys(form.properties).forEach((key) => {
             submitForm[key] = form.properties[key].value;
